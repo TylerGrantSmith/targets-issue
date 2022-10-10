@@ -1,0 +1,8 @@
+main:
+  script: data-raw/_targets.R
+  store: data-raw/_targets
+  reporter_make: summary
+custom:
+  script: data-raw2/_targets.R
+  store: data-raw2/_targets
+  reporter_make: summary

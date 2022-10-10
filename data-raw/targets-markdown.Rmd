@@ -1,0 +1,23 @@
+---
+title: "Targets Issue"
+author: "Tyler Grant Smith"
+date: "9/8/2022"
+output: html_document
+---
+
+```{r pipeline-setup, include=FALSE}
+library(targets)
+library(tarchetypes)
+
+knitr::opts_chunk$set(include = FALSE, echo = FALSE)
+# knitr::read_chunk(here::here("data-raw/targets-markdown-chunks.R"))
+tar_unscript()
+```
+
+```{targets test}
+tar_target(test, NULL)
+```
+
+```{r}
+tar_make()
+```
